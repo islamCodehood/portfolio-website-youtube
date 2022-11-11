@@ -5,13 +5,13 @@
 	margin: 0;
 	font-size: 1em;
 	text-decoration: none;
-	color: #111;
+	color: #434343;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 	margin: 0;
-	background-color:#fafafa
+	background-color: #fafafa;
 }
 
 section,
@@ -100,6 +100,7 @@ footer {
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: 500;
+	font-style: italic;
 }
 
 @media screen and (min-width: 576px) {
@@ -248,7 +249,6 @@ footer {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		/* gap: 36px; */
-
 	}
 }
 
@@ -260,7 +260,7 @@ footer {
 	display: flex;
 	gap: 12px;
 	background-color: #fff;
-	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -270,42 +270,35 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
 	.latestposts_card {
 		width: 32%;
 		min-height: 300px;
 		border-radius: 5px;
 		padding: 0;
 		flex-direction: column;
-		justify-content:flex-start;
+		justify-content: flex-start;
 		gap: 0;
 	}
 
 	.latestposts_card:hover {
 		transform: rotate(2.5deg);
 	}
-
 }
 @media screen and (min-width: 992px) {
-
 	.latestposts_card {
 		width: 32%;
 		min-height: 380px;
 		border-radius: 5px;
 		padding: 0;
 		flex-direction: column;
-		justify-content:flex-start;
+		justify-content: flex-start;
 		gap: 0;
 	}
 
 	.latestposts_card:hover {
 		transform: rotate(2.5deg);
 	}
-
 }
-
-
-
 
 .latestprojects_cardimage,
 .latestposts_cardimage {
@@ -322,7 +315,7 @@ footer {
 
 @media screen and (min-width: 768px) {
 	.latestposts_cardimage img {
-		border-radius: 5px 5px 0 0 ;
+		border-radius: 5px 5px 0 0;
 	}
 }
 
@@ -330,6 +323,11 @@ footer {
 	min-width: 90px;
 	width: 90px;
 	height: 90px;
+}
+
+.latestprojects_cardbody,
+.latestposts_cardbody {
+	padding: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -350,8 +348,6 @@ footer {
 		padding: 24px;
 	}
 }
-
-
 
 .latestprojects_cardtitle,
 .latestposts_cardtitle {
@@ -381,6 +377,21 @@ footer {
 /****END LATEST PROJECTS & POSTS****/
 
 /****START CONTACT FORM****/
+.contactform_wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.contactimage {
+	display: none;
+}
+
+/* @media screen and (min-width: 768px) {
+	.contactimage {
+		display: block;
+		width: 50%;
+	}
+} */
 
 .contactform {
 	width: 100%;
@@ -389,16 +400,13 @@ footer {
 	padding: 12px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-end;
 	gap: 12px;
 	background-color: rgba(0, 0, 0, 0.05);
-	/* max-width: 600px; */
 }
 
-
-
 @media screen and (min-width: 992px) {
-	.contactform {	
+	.contactform {
 		padding: 12px;
 	}
 }
@@ -411,21 +419,18 @@ footer {
 	outline: none;
 	padding: 12px;
 	width: 100%;
+	font-family: inherit;
 }
 
 @media screen and (min-width: 768px) {
 	.contactform_name,
-.contactform_email {
-	border-radius: 5px;
-	border: none;
-	outline: none;
-	padding: 12px;
-	width: 49%;
-}
+	.contactform_email {
+		width: 49%;
+	}
 
-.contactform_message {
-	width: 100%;
-}
+	.contactform_message {
+		width: 100%;
+	}
 }
 
 .contactform_btn {
@@ -437,6 +442,16 @@ footer {
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+	.contactform_btn {
+		width: fit-content;
+		padding: 12px 24px;
+
+	}
+
+}
+
 
 .contactform_btn:hover {
 	background-color: rgb(17, 17, 17, 0.9);
@@ -500,15 +515,15 @@ footer {
 .nav_link {
 	font-size: 1.1em;
 	font-weight: 600;
-	text-decoration: underline solid #111;
+	/* text-decoration: underline solid #111;
 	text-underline-offset: 7px;
-	text-decoration-thickness: 2px;
+	text-decoration-thickness: 2px; */
 }
 .footer_nav_link:hover,
 .nav_link:hover {
 	color: rgb(202, 0, 202);
-	text-decoration: underline solid rgb(202, 0, 202);
+	/* text-decoration: underline solid rgb(202, 0, 202);
 	text-underline-offset: 7px;
-	text-decoration-thickness: 2px;
+	text-decoration-thickness: 2px; */
 }
 /****END FOOTER****/
